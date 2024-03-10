@@ -1,0 +1,198 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+body {
+    /*background-color: #AF1111;*/
+    background-color: #1b1919;
+    color: #FF0000;
+    text-shadow: 0 4px 20px rgba(196, 185, 185, 0.622);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    height: 100vh;
+    width: 100vw;
+}
+
+#visual-archive-text{
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6px;
+    z-index: 2;
+    background-color: transparent;
+    /*text-shadow: 0 4px 3px rgba(255, 0, 0, 0.883);*/
+    text-shadow: none;
+}
+
+#gif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    background-color: transparent;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 0.5fr repeat(2, 1fr) 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "information information information information"
+      ". selected-image selected-image ."
+      ". selected-image selected-image ."
+      "contact contact contact contact"; 
+   width: 100vw;
+   height: 100vh;
+}
+
+.information {
+    grid-area: information;
+    z-index: 2;
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+}
+
+.selected-image {
+    grid-area: selected-image;
+    z-index: 1;
+    justify-self: center; 
+    overflow: scroll; 
+    display: none;  
+    position: relative;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="20"><text y="50%">scroll</text></svg>'), auto;
+}
+
+img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%; 
+}
+
+.contact { 
+    grid-area: contact; 
+    justify-self: center;
+    z-index: 1;
+}
+
+/*titles*/
+#merxyz-one {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">merxyz1</text></svg>'), auto;
+}
+
+#merxyz-two {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">merxyz2</text></svg>'), auto;
+}
+
+#merxyz-three {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">merxyz3</text></svg>'), auto;
+}
+
+#merxyz-four {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">merxyz4</text></svg>'), auto;
+}
+
+#merxyz-five {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">merxyz5</text></svg>'), auto;
+}
+
+#merxyz-six {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">merxyz6</text></svg>'), auto;
+}
+
+#mindcast-nineteen {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">mindcast019</text></svg>'), auto;
+}
+
+#mindcast-twenty {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">mindcast020</text></svg>'), auto;
+}
+
+#mindcast-twentyone {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">mindcast021</text></svg>'), auto;
+}
+
+#mindcast-twentytwo {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">mindcast022</text></svg>'), auto;
+}
+
+#mindcast-twentythree {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">mindcast023</text></svg>'), auto;
+}
+
+#mindcast-twentyfour {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">mindcast024</text></svg>'), auto;
+}
+
+#mindcast-twentyfive {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">mindcast025</text></svg>'), auto;
+}
+
+#mindcast-twentysix {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">mindcast026</text></svg>'), auto;
+}
+
+#odyxxey-radio {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20"><text y="50%" font-family="Courier New" font-size="12" fill="%23FF0000">odyxxey radio</text></svg>'), auto;
+}
+
+/*effects*/
+.information-shadow {
+    text-shadow: -10px 4px 20px rgba(224, 217, 217, 0.998);
+}
+
+.contact-blur {
+    text-shadow: 5px 1px 15px rgba(255, 255, 255, 0.998);  
+}
+
+/*elements*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FF0000;
+}
+
+a:hover {
+    background-color:  #FF0000;
+    color:  #1b1919;
+    filter: blur(0.5px);
+    cursor: pointer;
+}
+
+/*media*/
+@media  screen and (max-width: 950px) {
+    #visual-archive-text{
+        font-size: 4px;
+    }
+}
+
+@media  screen and (max-width: 650px) {
+    #visual-archive-text{
+        font-size: 2px;
+    }
+
+    .container {
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: 0.5fr repeat(2, 1fr) 0.5fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "information information information information"
+          "selected-image selected-image selected-image selected-image"
+          "selected-image selected-image selected-image selected-image"
+          "contact contact contact contact"; 
+       width: 100vw;
+       height: 100vh;
+    }
+}

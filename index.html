@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="robin-mac-design-stylesheet.css">
+    <title>robin mac design</title>
+</head>
+
+<body>
+    <div id="gif">
+        <img src="drawings-gif.gif">
+    </div>
+    <div id="visual-archive-text">
+        <script>
+            fetch('visual-archive.txt')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('visual-archive-text').innerText = data;
+                })
+                .catch(error => console.error(error));
+        </script>
+    </div>
+    <div class="container">
+        <div class="information">
+            <span class="information-shadow">label design & direction</span>
+        </div>
+        <div class="selected-image">
+            <img src="MERXYZ1.jpeg" id="merxyz-one">
+            <img src="MERXYZ2.jpg" id="merxyz-two">
+            <img src="MERXYZ3.jpeg" id="merxyz-three">
+            <img src="MERXYZ4.jpeg" id="merxyz-four">
+            <img src="MERXYZ5.jpeg" id="merxyz-five">
+            <img src="MERXYZ6.jpeg" id="merxyz-six">
+            <img src="Mindcast019ANHEDONIA.jpeg" id="mindcast-nineteen">
+            <img src="Mindcast020NoNation.jpg" id="mindcast-twenty">
+            <img src="Mindcast021SecondIndex.jpg" id="mindcast-twentyone">
+            <img src="Mindcast022BabyySickoo.jpg" id="mindcast-twentytwo">
+            <img src="Mindcast023DTowards.jpg" id="mindcast-twentythree">
+            <img src="Mindcast024SinOfTheFather.jpeg" id="mindcast-twentyfour">
+            <img src="Mindcast025SyntheticPleasures.jpeg" id="mindcast-twentyfive">
+            <img src="Mindcast026EdGein2Kinn.jpeg" id="mindcast-twentysix">
+            <img src="Mindseyerecords.xyz 4 OdyXxey Radio.jpg" id="odyxxey-radio">
+        </div>
+        <div class="contact">
+            <span class="contact-blur" target="_blank">robin mac</span>
+            <a href="mailto:rbnmckwn@gmail.com" class="contact-blur">mail</a>
+            <a href="https://www.instagram.com/mindseyerecords.xyz/" class="contact-blur" target="_blank">instagram</a>
+        </div>
+    </div>
+    <script src="robin-mac-design-script.js"></script>
+</body>
+</html>
